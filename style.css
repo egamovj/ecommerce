@@ -63,80 +63,129 @@ img {
 }
 
 strong {
-    font-weight: var(--fw8);
+  font-weight: var(--fw8);
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 input::placeholder {
-    font: inherit;
+  font: inherit;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Poppins';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins";
 }
 
 h1 {
-    font-size: calc(1.3em + 1vw);
-    font-weight: var(--fw8);
+  font-size: calc(1.3em + 1vw);
+  font-weight: var(--fw8);
 }
 
 h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 h3 {
-    font-size: 1.2em;
-    font-weight: var(--fw7);
+  font-size: 1.2em;
+  font-weight: var(--fw7);
 }
 
 h4 {
-    font-size: 1em;
-    font-weight: var(--fw6);
+  font-size: 1em;
+  font-weight: var(--fw6);
 }
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 0.938em;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0.938em;
 }
 
 .column {
-    margin: -0.938em 0;
+  margin: -0.938em 0;
 }
 
 .column .row {
-    padding: 0 0.938em;
+  padding: 0 0.938em;
 }
 
 .flexwrap {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flexitem {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .flexcol {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
+.main-links a:hover {
+  color: var(--secondary-color);
+}
+
+.second-links a:hover {
+  color: var(--light-text-color);
+}
+
+.icon-small,
+.icon-large {
+  display: flex;
+  align-items: center;
+  padding: 0 0.25em;
+  font-weight: normal;
+}
+
+.icon-small {
+  font-size: 1.25em;
+  margin: auto;
+}
+
+.icon-large {
+  font-size: 1.75em;
+  padding: 0 0.75em 0 0;
+}
+
+header li > a {
+  display: flex;
+  position: relative;
+  line-height: inherit;
+}
+
+.header-top .wrapper {
+  font-size: var(--font-small);
+  font-weight: var(--fw3);
+  justify-content: space-between;
+  line-height: 42px;
+}
+
+.header-top .wrapper ul {
+  gap: 2em;
+}
+
+.header-top li {
+  position: relative;
+}
 
 @media screen and (min-width: 992px) {
-    .container {
-        padding: 0 2em;
-    }
+  .container {
+    padding: 0 2em;
+  }
 }
