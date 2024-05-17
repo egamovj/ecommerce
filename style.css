@@ -168,66 +168,68 @@ h4 {
 }
 
 .object-cover img {
-    position: absolute;
-    object-fit: cover;
-    width: var(--percent100);
-    height: var(--percent100);
-    display: block;
+  position: absolute;
+  object-fit: cover;
+  width: var(--percent100);
+  height: var(--percent100);
+  display: block;
 }
 
 .products .media {
-    position: relative;
-    flex-shrink: 0;
-    overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.primary-button, .secondary-button, .light-button {
-    font-size: var(--font-small);
-    padding: 0.9em 2em;
-    height: auto;
-    width: fit-content;
-    border-radius: 2em;
-    transition: var(--trans-background-color);
+.primary-button,
+.secondary-button,
+.light-button {
+  font-size: var(--font-small);
+  padding: 0.9em 2em;
+  height: auto;
+  width: fit-content;
+  border-radius: 2em;
+  transition: var(--trans-background-color);
 }
 
 .primary-button {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .primary-button:hover {
-    background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 .secondary-button {
-    background-color: var(--secondary-dark-color);
-    color: var(--white-color);
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
 }
 
 .secondary-button:hover {
-    background-color: var(--light-bg-color);
-    color: var(--secondary-dark-color);
+  background-color: var(--light-bg-color);
+  color: var(--secondary-dark-color);
 }
 
 .light-button {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
 }
 
 .light-button:hover {
-    background-color: var(--secondary-dark-color);
-    color: var(--white-color);
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
 }
 
 .view-all {
-    font-size: var(--font-small);
-    display: flex;
-    gap: 1em;
-    transition: var(--trans-color);
+  font-size: var(--font-small);
+  display: flex;
+  gap: 1em;
+  transition: var(--trans-color);
 }
 
 .mini-text {
-    font-size: var(--font-smaller);
-    color: var(--light-text-color);
+  font-size: var(--font-smaller);
+  color: var(--light-text-color);
 }
 
 :where(.off-canvas, header) li > a {
@@ -275,9 +277,9 @@ h4 {
 }
 
 .header-nav {
-    padding: 0.5em 0;
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid var(--border-color);
+  padding: 0.5em 0;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .trigger {
@@ -362,106 +364,104 @@ nav .fly-item {
 }
 
 .mega .flexcol {
-    flex: 1;
-    min-width: 180px;
-    padding-right: 2.5em;
-    margin-bottom: 1.5em;
-    z-index: 1;
+  flex: 1;
+  min-width: 180px;
+  padding-right: 2.5em;
+  margin-bottom: 1.5em;
+  z-index: 1;
 }
 
-
 .header-main {
-    background-color: var(--secondary-dark-color);
-    padding: 1.5em 0;
-    margin-bottom: 2em;
+  background-color: var(--secondary-dark-color);
+  padding: 1.5em 0;
+  margin-bottom: 2em;
 }
 
 .dpt-cat {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .dpt-cat .dpt-head {
-    position: relative;
-    width: 300px;
-    padding: 0.75em 1.5em;
-    background-color: var(--primary-color);
-    border-radius: 7px 7px 0 0;
-    color: var(--white-color);
-    margin-bottom: -2.15em;
+  position: relative;
+  width: 300px;
+  padding: 0.75em 1.5em;
+  background-color: var(--primary-color);
+  border-radius: 7px 7px 0 0;
+  color: var(--white-color);
+  margin-bottom: -2.15em;
 }
 
 .dpt-cat .dpt-head .mini-text {
-    color: var(--light-bg-color);
+  color: var(--light-bg-color);
 }
 
 .dpt-cat .dpt-trigger {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1.3em;
-    height: 60px;
-    width: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.3em;
+  height: 60px;
+  width: 60px;
 }
 
 .dpt-menu > ul > li > a {
-    font-size: var(--font-small);
-    height: 46px;
-    align-items: center;
+  font-size: var(--font-small);
+  height: 46px;
+  align-items: center;
 }
 
 .dpt-menu .has-child:hover ul {
-    display: block;
+  display: block;
 }
 
 .dpt-menu .has-child li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header-main .right {
-    flex: 1;
+  flex: 1;
 }
 
 form {
-    position: relative;
+  position: relative;
 }
 
 form.search input {
-    line-height: 3.25em;
-    padding: 0 7em 0 4.5em;
-    border: 0;
-    outline: 0;
-    width: var(--percent100);
-    border-radius: 7px;
-    font-size: 0.9em;
-    font-weight: var(--fw3);
+  line-height: 3.25em;
+  padding: 0 7em 0 4.5em;
+  border: 0;
+  outline: 0;
+  width: var(--percent100);
+  border-radius: 7px;
+  font-size: 0.9em;
+  font-weight: var(--fw3);
 }
 
 form.search :where(span, button) {
-    position: absolute;
-    top: 0;
-    padding: 0.55em 1.5em;
-    font-size: 1em;
-    color: var(--light-text-color);
-    height: var(--percent100);
+  position: absolute;
+  top: 0;
+  padding: 0.55em 1.5em;
+  font-size: 1em;
+  color: var(--light-text-color);
+  height: var(--percent100);
 }
 
 form.search button {
-    right: 0;
-    border: 0;
-    outline: 0;
-    font-size: 0.875em;
-    font-weight: var(--fw6);
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border-radius: 0 7px 7px 0;
-    cursor: pointer;
-    transition: var(--trans-background);
+  right: 0;
+  border: 0;
+  outline: 0;
+  font-size: 0.875em;
+  font-weight: var(--fw6);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+  transition: var(--trans-background);
 }
 
-
 form.search button:hover {
-    background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 .site-off {
@@ -541,7 +541,7 @@ form.search button:hover {
   height: auto;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: max-height 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .off-canvas .expand > :where(ul, .mega) {
@@ -555,7 +555,7 @@ form.search button:hover {
   font-size: var(--font-small);
   line-height: 36px;
   padding-top: 1.25em;
-  margin: 1.25em 0; 
+  margin: 1.25em 0;
   border-top: 1px solid var(--border-color);
 }
 
@@ -580,7 +580,12 @@ form.search button:hover {
   width: var(--percent100);
 }
 
-.off-canvas .thetop-nav .right > ul > :where(:nth-child(4), li:nth-child(5)) > a{
+.off-canvas
+  .thetop-nav
+  .right
+  > ul
+  > :where(:nth-child(4), li:nth-child(5))
+  > a {
   display: none;
 }
 
@@ -595,6 +600,47 @@ form.search button:hover {
   line-height: 16px;
   margin: 0 0.5em 0.5em 0;
 }
+
+/* SLIDER */
+.slider > div > .wrapper {
+  width: calc(100% - (300px + 2em));
+  margin-left: auto;
+}
+
+.slider .item {
+  position: relative;
+  height: 474px;
+}
+
+.slider .text-content {
+  position: relative;
+  height: var(--percent100);
+  justify-content: flex-end;
+  padding: 0 0 10% 10%;
+  z-index: 1;
+}
+
+.slider h4 {
+  font-size: var(--font-small);
+  font-weight: var(--fw7);
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border-radius: 4px;
+}
+
+.text-content :where(h2, h3) span:first-child {
+  font-weight: var(--fw3);
+  columns: var(--light-text-color);
+}
+
+.text-content :where(h2, h3) span:last-child {
+  color: var(--secondary-dark-color);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
 
 
 @media screen and (min-width: 992px) {
@@ -740,8 +786,6 @@ form.search button:hover {
     background-size: auto;
   }
 
-  
-
   .dpt-menu .beauty ul {
     background-image: url(assets/menu/menu_bg1.jpg);
   }
@@ -756,13 +800,17 @@ form.search button:hover {
   }
 
   .dpt-menu .has-child > :where(ul, .mega)::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(225,225,225,0));
+    background: linear-gradient(
+      90deg,
+      rgba(225, 225, 225, 1) 0%,
+      rgba(225, 225, 225, 0)
+    );
   }
 
   .dpt-menu .mega {
@@ -773,6 +821,4 @@ form.search button:hover {
   .dpt-menu .has-child:hover .mega {
     display: flex;
   }
-
-
 }
