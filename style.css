@@ -410,6 +410,14 @@ nav .fly-item {
     align-items: center;
 }
 
+.dpt-menu .has-child:hover ul {
+    display: block;
+}
+
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
+
 .header-main .right {
     flex: 1;
 }
@@ -580,5 +588,59 @@ form.search button:hover {
     padding: 0 1.5rem;
     border-bottom: 1px solid var(--border-color);
   }
+
+  .dpt-menu .has-child > ul,
+  .dpt-menu .mega {
+    position: absolute;
+    top: 0;
+    left: var(--percent100);
+    width: var(--percent100);
+    height: auto;
+    min-height: var(--percent100);
+    padding: 1.5em;
+    font-size: var(--font-small);
+    line-height: 2.5em;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    display: none;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  
+
+  .dpt-menu .beauty ul {
+    background-image: url(assets/menu/menu_bg1.jpg);
+  }
+  .dpt-menu .electric ul {
+    background-image: url(assets/menu/menu_bg2.jpg);
+  }
+  .dpt-menu .fashion ul {
+    background-image: url(assets/menu/menu_bg3.jpg);
+  }
+  .dpt-menu .homekit .mega {
+    background-image: url(assets/menu/menu_bg4.jpg);
+  }
+
+  .dpt-menu .has-child > :where(ul, .mega)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(225,225,225,0));
+  }
+
+  .dpt-menu .mega {
+    width: auto;
+    min-width: var(--percent100);
+  }
+
+  .dpt-menu .has-child:hover .mega {
+    display: flex;
+  }
+
 
 }
