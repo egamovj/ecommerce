@@ -603,14 +603,13 @@ form.search button:hover {
 
 /* SLIDER */
 
-
 .slider .item {
   position: relative;
   height: 474px;
 }
 
 .slider .item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 30%;
   left: 0;
@@ -655,10 +654,20 @@ form.search button:hover {
   background-color: var(--secondary-dark-color);
 }
 
+.brands .wrapper {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em 0;
+}
 
+.brands .item img {
+  opacity: 0.25;
+  transition: opacity 0.3s;
+}
 
-
-
+.brands .item a:hover img {
+  opacity: 1;
+}
 
 @media screen and (min-width: 992px) {
   .container {
@@ -843,6 +852,4 @@ form.search button:hover {
     width: calc(100% - (300px + 2em));
     margin-left: auto;
   }
-
-
 }
