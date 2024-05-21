@@ -834,6 +834,40 @@ form.search button:hover {
   text-decoration: underline;
 }
 
+.products .price .current {
+  font-size: calc(1em + 1vw);
+  color: var(--primary-color);
+  margin-right: 0.25em;
+} 
+
+.products .price .normal {
+  color: var(--light-text-color);
+  text-decoration: line-through;
+}
+
+.products .stock .qty {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products .stock .bar {
+  height: 3px;
+  margin-top: 1em;
+  background-color: var(--border-color);
+  overflow: hidden;
+}
+
+.products .stock .available {
+  height: 3px;
+  width: 21%;
+  background-color: var(--secondary-color);
+}
+
+.products .item {
+  display: flex;
+  position: relative;
+}
+
 .products.big .item {
   flex-direction: column;
   padding: 2.5em;
@@ -842,7 +876,34 @@ form.search button:hover {
   max-width: 460px;
 }
 
+
+.products.mini .item {
+  margin-bottom: 2em;
+}
+
+.products.mini .media {
+  width: 130px;
+  height: 160px;
+  margin-right: 1.25em;
+}
+
+.products.mini .content {
+  margin: 0;
+  gap: 0.75em;
+}
+
+.products:where(.mini, .main) h3 {
+  font-weight: 400;
+}
+
 /* RESPONSIVE */
+
+
+@media screen and (min-width: 768px) {
+  .products .price .current {
+    font-size: 1.25em;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .container {
