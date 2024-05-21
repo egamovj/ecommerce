@@ -51,5 +51,16 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
 
+const searchButton = document.querySelector(".t-search"),
+  tClose = document.querySelector(".search-close"),
+  showClass = document.querySelector(".site");
+
+searchButton.addEventListener("click", function () {
+  showClass.classList.toggle("showSearch");
+});
+
+tClose.addEventListener("click", function () {
+  showClass.classList.remove("showsearch");
 });
